@@ -1,10 +1,19 @@
 const { Builder } = require('selenium-webdriver');
+const firefox = require('selenium-webdriver/firefox');
 
 describe('Selenium - Test mínimo Firefox', () => {
   let driver;
 
   beforeAll(async () => {
-    driver = await new Builder().forBrowser('firefox').build();
+    // Define la ruta al binario de Firefox Snap
+    const options = new firefox.Options()
+      .setBinary('/snap/bin/firefox')
+      .headless(); // Modo headless recomendado en CI
+
+    driver = await new Builder()
+      .forBrowser('firefox')
+      .setFirefoxOptions(options)
+      .build();
   });
 
   afterAll(async () => {
