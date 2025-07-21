@@ -106,6 +106,18 @@ Abrir la consola de terminal y ejecutar:
 ```poweshell
 npm install selenium-webdriver --save-dev
 ```
+- **Creación del archivo de test, por ejemplo selenium.test.js**:<br>
+Dentro de la carpeta  `__tests__`, crear un archivo llamado `selenium.test.js`.
+
+    **Requisitos adicionales**<br>
+       Debes tener instalado Chrome y el ChromeDriver compatible en tu máquina (o el runner).<br>
+       Si usas GitHub Actions, asegúrate de incluir la instalación de Chrome y ChromeDriver en el workflow.
+
+- **Ejecuta el test localmente**:<br>
+
+```powershell
+npx jest selenium.test.js
+```
 
 
 
