@@ -95,6 +95,17 @@ En la raíz del proyecto<br>
 O dentro de una carpeta llamada `__tests__`<br>
 Jest, por defecto, busca archivos que incluyan `.test.js`, `.spec.js`, o estén en carpetas `__tests__`.
 
+## 🪨 Instalación y configuración de Sellenium y Jest
+
+### Para añadir un test con Selenium en tu proyecto de JavaScript, seguimos estos pasos usando Selenium WebDriver y Jest.
+
+- **Instalación de Selenium WebDriver**:<br>
+Instalar las dependencias necesarias.<br>
+Abrir la consola de terminal y ejecutar:
+
+```poweshell
+npm install selenium-webdriver --save-dev
+```
 
 
 
